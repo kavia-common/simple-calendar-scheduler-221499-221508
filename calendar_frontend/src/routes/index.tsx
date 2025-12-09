@@ -1,21 +1,18 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { CalendarPage } from "~/components/calendar/CalendarPage";
 
 // PUBLIC_INTERFACE
 export default component$(() => {
-  return (
-    <div class="page-container">
-      <h1 class="main-title">calendar_frontend is being generated</h1>
-    </div>
-  );
+  return <CalendarPage />;
 });
 
 export const head: DocumentHead = {
-  title: "calendar_frontend",
+  title: "Calendar Scheduler",
   meta: [
     {
       name: "description",
-      content: "Ultralight Qwik template",
+      content: "Modern calendar scheduler with month/week/day views and event management.",
     },
   ],
 };
